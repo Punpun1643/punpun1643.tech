@@ -1,0 +1,67 @@
+.experience__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.875rem;
+}
+
+.timeline {
+    background-color: var(--container-color);
+    padding: 1.875rem;
+    border-radius: 1.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.timeline__item {
+    position: relative;
+    padding-left: 3.125rem;
+    padding-bottom: 3.125rem;
+}
+
+.timeline__item:last-child {
+    padding-bottom: 0;
+    height:80%
+}
+
+.timeline__item::before {
+    content: '';
+    width: 2px;
+    height: 90%;
+    background-color: var(--text-color);
+    position: absolute;
+    left: 0.25rem;
+    top: 2.5rem;
+}
+
+.timeline .uil-graduation-cap,
+.timeline .uil-bag {
+    position: absolute;
+    left: -0.4375rem;
+    top: 0;
+    font-size: var(--h2-font-size);
+    color: var(--text-color);
+    padding: 0.4375rem 0;
+}
+
+.timeline__date {
+    color: var(--title-color);
+}
+
+/*========== BREAKPOINTS ==========*/
+/* large devices */
+@media screen and (max-width: 992px) {
+}
+
+/* medium devices */
+@media screen and (max-width: 768px) {
+    .experience__container {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        margin: 0 3rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .experience__container {
+        margin: 0 1.75em;
+    }
+}
