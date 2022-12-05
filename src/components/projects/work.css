@@ -1,0 +1,141 @@
+.work__filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.75rem;
+    margin-bottom: var(--mb-2);
+}
+
+.work__item {
+    cursor: pointer;
+    color: var(--title-color);
+    padding: 0.25rem 0.75rem;
+    font-weight: var(--font-medium);
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+}
+
+.work__item:hover {
+    background-color: var(--title-color);
+    color: var(--container-color);
+}
+
+.work__container {
+    grid-template-columns: repeat(1, max-content);
+    gap: 3rem;
+    justify-content: center;
+}
+
+.work__card {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 0 0 1rem 0;
+    max-width: 800px;
+}
+
+.work__image {
+    width: 800px;
+    border-radius: 1rem 1rem 0 0;
+    margin-bottom: var(--mb-1);
+}
+
+.work__content {
+    padding: 1rem;
+}
+
+.work__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-5);
+}
+
+.work__subtitle {
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1-5);
+    
+}
+
+.work__tech {
+    font-size: var(--small-font-size);
+    display: flex;
+    color: var(--title-color);
+    flex-wrap: wrap;
+}
+
+.work__tech-item {
+    margin: 0 1rem 0 0;
+    margin-bottom: var(--mb-1);
+}
+
+.button {
+    padding: 1rem;
+}
+
+.work__button-icon {
+    margin-right: var(--mb-0-5);
+    font-size: var(--h3-font-size);
+}
+
+.work__button {
+    font-size: var(--small-font-size);
+}
+
+/* active work */
+.active-work {
+    background-color: var(--title-color);
+    color: var(--container-color);
+}
+
+/*========== BREAKPOINTS ==========*/
+/* large devices */
+@media screen and (max-width: 992px) {
+    .work__image {
+        margin-bottom: 0.75rem;
+    }
+    
+    .work__title {
+        margin-bottom: 0.25rem;
+    }
+
+    .work__card {
+        max-width: 500px;
+    }
+    
+    .work__image {
+        width: 500px;
+    }
+}
+  
+/* medium devices */
+@media screen and (max-width: 768px) {
+    .work__container {
+        grid-template-columns: max-content;
+    }
+
+    .work__card {
+        max-width: 500px;
+    }
+    
+    .work__image {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .work__card {
+        max-width: 320px;
+    }
+    
+    .work__image {
+        width: 320px;
+    }
+
+    .button {
+        padding: 0.75rem;
+    }
+}
+
+/* small devices */
+@media screen and (max-width: 350px) {
+}
